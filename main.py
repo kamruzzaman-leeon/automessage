@@ -1,8 +1,9 @@
 import pyautogui
 import time
-message = 100
-while message>0:
+msg = input('enter your message:')
+n = int(input('how many time you want to write your message: '))
+while n > 0:
     time.sleep(1)
-    pyautogui.typewrite('finally i did it.')
+    pyautogui.typewrite(msg)
     pyautogui.press('enter')
-    message = message-1
+    n = n-1
